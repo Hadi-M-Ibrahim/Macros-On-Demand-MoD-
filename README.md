@@ -1,8 +1,5 @@
 # Macros-On-Demand-MoD-
 
-- [ ] incomplete task
-- [x] completed task
-
 - [ ] Fix login button
 - [ ] Create tutorial screen 
 - [ ] Implement location collection
