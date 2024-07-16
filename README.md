@@ -5,6 +5,6 @@
 - [ ] Implement location collection
 - [ ] Implement Macro collection
 - [ ] Optional: Implement Ad Display
-- [ ] Create ranking algo
+- [x] Create ranking algo
 - [ ] Display scroll view of ranked choices
 - [ ] Optional: Implement Premium AD-Free Version 
