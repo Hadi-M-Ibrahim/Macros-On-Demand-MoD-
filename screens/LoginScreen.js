@@ -13,14 +13,14 @@ const LoginScreen = ({ navigation }) => {
       const credentials = await auth0.webAuth.authorize({
         scope: "openid profile email",
       });
-      navigation.navigate("Home");
+      navigation.navigate("Inputs");
     } catch (error) {
       console.log(error);
     }
   };
 
   const onContinueAsGuest = () => {
-    navigation.navigate("Home");
+    navigation.navigate("Inputs");
   };
 
   return (

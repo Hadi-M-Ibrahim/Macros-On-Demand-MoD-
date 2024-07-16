@@ -5,14 +5,17 @@ import {
   Button,
   StyleSheet,
   Text,
-  Alert,
 } from "react-native";
 
-const HomeScreen = () => {
+const InputScreen = ({ navigation }) => {
   const [calories, setCalories] = useState("");
   const [protein, setProtein] = useState("");
   const [carbs, setCarbs] = useState("");
   const [fat, setFat] = useState("");
+
+  const OnSubmit = () => {
+    navigation.navigate("Results");
+  };
 
   return (
     <SafeAreaView style={styles.container}>
@@ -45,11 +48,7 @@ const HomeScreen = () => {
         onChangeText={setFat}
         keyboardType="numeric"
       />
-      <Button
-        title="Submit"
-        onPress={console.log()} // To do: write function to handle submission
-        color={styles.button.color}
-      />
+      <Button title="Submit" onPress={OnSubmit} color={styles.button.color} />
     </SafeAreaView>
   );
 };
@@ -87,4 +86,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HomeScreen;
+export default InputScreen;

@@ -2,7 +2,8 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import LoginScreen from "./screens/LoginScreen";
-import HomeScreen from "./screens/HomeScreen";
+import InputScreen from "./screens/InputScreen";
+import ResultsScreen from "./screens/ResultsScreen";
 
 const Stack = createStackNavigator();
 
@@ -16,8 +17,13 @@ const App = () => {
           options={{ headerShown: false }}
         />
         <Stack.Screen
-          name="Home"
-          component={HomeScreen}
+          name="Inputs"
+          component={InputScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Results"
+          component={ResultsScreen}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
