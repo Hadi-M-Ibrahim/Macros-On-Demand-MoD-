@@ -1,11 +1,12 @@
 import { StyleSheet, Text, View, Button, Vibrationibrate, Vibration } from 'react-native';
+import { SafeAreaView } from 'react-native-web';
 
 export default function App() {
   return (
-    <view style={styles.container}>
+    <View style={styles.container}>
         <Button title='click'
         onPress={() => Vibration.vibrate()}/>
-    </view>
+    </View>
   );
 }
 
