@@ -1,20 +1,34 @@
-import { StyleSheet, Text, View, Button, Vibrationibrate, Vibration } from 'react-native';
-import { SafeAreaView } from 'react-native-web';
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import LoginScreen from "./screens/LoginScreen";
+import InputScreen from "./screens/InputScreen";
+import ResultsScreen from "./screens/ResultsScreen";
 
-export default function App() {
+const Stack = createStackNavigator();
+
+const App = () => {
   return (
-    <View style={styles.container}>
-        <Button title='click'
-        onPress={() => Vibration.vibrate()}/>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Login">
+        <Stack.Screen
+          name="Login"
+          component={LoginScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Inputs"
+          component={InputScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Results"
+          component={ResultsScreen}
+          options={{ headerShown: false }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
