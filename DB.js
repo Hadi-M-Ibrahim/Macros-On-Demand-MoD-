@@ -1,4 +1,6 @@
-const MenuItems = [
+import { MenuItem } from "./Internal.js";
+
+export const MenuItems = [
   new MenuItem("Big Mac", "McDonald's", 550, 25, 45, 30),
   new MenuItem("Chicken Sandwich", "Chick-fil-A", 440, 28, 41, 19),
   new MenuItem("Crunchwrap Supreme", "Taco Bell", 530, 17, 71, 21),
@@ -9,14 +11,7 @@ const MenuItems = [
   new MenuItem("Chicken Burrito", "Chipotle", 835, 47, 85, 35),
   new MenuItem("Caesar Salad", "Panera Bread", 330, 10, 14, 25),
   new MenuItem("Pepperoni Pizza (medium)", "Pizza Hut", 280, 11, 27, 12),
-  new MenuItem(
-    "SuperSONIC Bacon Double Cheeseburger",
-    "Sonic",
-    1240,
-    65,
-    49,
-    87
-  ),
+  new MenuItem("Bacon Double Cheeseburger", "Sonic", 1240, 65, 49, 87),
   new MenuItem("Orange Chicken", "Panda Express", 490, 25, 51, 23),
   new MenuItem("Original Recipe Chicken Breast", "KFC", 390, 31, 11, 21),
   new MenuItem("Classic Chicken Sandwich", "Popeyes", 699, 28, 50, 42),

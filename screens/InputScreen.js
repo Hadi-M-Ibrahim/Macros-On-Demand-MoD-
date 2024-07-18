@@ -6,15 +6,28 @@ import {
   StyleSheet,
   Text,
 } from "react-native";
+import { useNavigation } from "@react-navigation/native";
+import { IdealMenuItem } from "../Internal";
 
-const InputScreen = ({ navigation }) => {
-  const [calories, setCalories] = useState("");
-  const [protein, setProtein] = useState("");
-  const [carbs, setCarbs] = useState("");
-  const [fat, setFat] = useState("");
+const InputScreen = () => {
+  const [calories, setCalories] = useState("0");
+  const [protein, setProtein] = useState("0");
+  const [carbs, setCarbs] = useState("0");
+  const [fat, setFat] = useState("0");
+
+  const navigation = useNavigation();
 
   const OnSubmit = () => {
-    navigation.navigate("Results");
+    const UsersIdealItem = new IdealMenuItem(
+      "IdealMenuItem",
+      "User",
+      calories,
+      protein,
+      carbs,
+      fat
+    );
+
+    navigation.navigate("Results", { UsersIdealItem });
   };
 
   return (
