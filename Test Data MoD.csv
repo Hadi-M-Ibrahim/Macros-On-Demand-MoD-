@@ -1,40 +1,40 @@
-Item Name,Brand,Calories,Fat (g),Protein (g),Carbohydrates (g)
-Big Mac,McDonald's,550,30,25,45
-Chicken Sandwich,Chick-fil-A,440,19,28,41
-Crunchwrap Supreme,Taco Bell,530,21,17,71
-Dave's Single,Wendy's,590,37,29,37
-Turkey Breast Sandwich,Subway,280,4,18,46
-Whopper,Burger King,657,40,28,49
-Pepperoni Pizza (large),Domino's,300,13,12,34
-Chicken Burrito,Chipotle,835,35,47,85
-Caesar Salad,Panera Bread,330,25,10,14
-Pepperoni Pizza (medium),Pizza Hut,280,12,11,27
-SuperSONIC Bacon Double Cheeseburger,Sonic,1240,87,65,49
-Orange Chicken,Panda Express,490,23,25,51
-Original Recipe Chicken Breast,KFC,390,21,31,11
-Classic Chicken Sandwich,Popeyes,699,42,28,50
-Blizzard (medium),Dairy Queen,720,25,14,108
-Roast Beef Sandwich,Arby's,360,14,23,37
-Jumbo Jack,Jack in the Box,490,28,20,42
-Pepperoni Pizza (large),Papa John's,290,12,13,34
-Pepperoni Pizza (large),Little Caesars,280,11,13,32
-Chicken Finger Box,Raising Cane's,1250,67,63,94
-Whataburger,Whataburger,590,25,28,68
-Classic Wings,Wingstop,840,63,45,0
-ButterBurger,Culver's,460,23,18,37
-Original Italian,Jersey Mike's,570,33,27,43
-Chicken Finger Plate,Zaxby's,1270,65,57,101
-Turkey Tom,Jimmy John's,510,23,25,46
-Cheeseburger,Five Guys,840,55,37,40
-Frisco Thickburger,Hardee's,920,64,37,46
-Cajun Filet Biscuit,Bojangles,550,29,25,48
-Western Bacon Cheeseburger,Carl's Jr.,760,35,38,68
-Hook & Ladder,Firehouse Subs,720,30,39,69
-Double-Double,In-N-Out Burger,670,41,37,39
-Chicken Avocado Burrito,El Pollo Loco,690,30,40,60
-ShackBurger,Shake Shack,530,33,28,37
-Epic Burrito,Del Taco,860,42,41,80
-Deluxe Pepperoni Pizza,Marco's Pizza,300,14,15,28
-Chicken Sandwich,Church's Chicken,690,35,25,68
-Build Your Own Pizza,Blaze Pizza,810,28,37,99
-Chicken Bowl,Flame Broiler,600,13,44,70
+Item Name,Brand,Calories,Protein (g),Carbohydrates (g),Fat (g)
+Big Mac,McDonald's,550,25,45,30
+Chicken Sandwich,Chick-fil-A,440,28,41,19
+Crunchwrap Supreme,Taco Bell,530,17,71,21
+Dave's Single,Wendy's,590,29,37,37
+Turkey Breast Sandwich,Subway,280,18,46,4
+Whopper,Burger King,657,28,49,40
+Pepperoni Pizza (large),Domino's,300,12,34,13
+Chicken Burrito,Chipotle,835,47,85,35
+Caesar Salad,Panera Bread,330,10,14,25
+Pepperoni Pizza (medium),Pizza Hut,280,11,27,12
+SuperSONIC Bacon Double Cheeseburger,Sonic,1240,65,49,87
+Orange Chicken,Panda Express,490,25,51,23
+Original Recipe Chicken Breast,KFC,390,31,11,21
+Classic Chicken Sandwich,Popeyes,699,28,50,42
+Blizzard (medium),Dairy Queen,720,14,108,25
+Roast Beef Sandwich,Arby's,360,23,37,14
+Jumbo Jack,Jack in the Box,490,20,42,28
+Pepperoni Pizza (large),Papa John's,290,13,34,12
+Pepperoni Pizza (large),Little Caesars,280,13,32,11
+Chicken Finger Box,Raising Cane's,1250,63,94,67
+Whataburger,Whataburger,590,28,68,25
+Classic Wings,Wingstop,840,45,0,63
+ButterBurger,Culver's,460,18,37,23
+Original Italian,Jersey Mike's,570,27,43,33
+Chicken Finger Plate,Zaxby's,1270,57,101,65
+Turkey Tom,Jimmy John's,510,25,46,23
+Cheeseburger,Five Guys,840,37,40,55
+Frisco Thickburger,Hardee's,920,37,46,64
+Cajun Filet Biscuit,Bojangles,550,25,48,29
+Western Bacon Cheeseburger,Carl's Jr.,760,38,68,35
+Hook & Ladder,Firehouse Subs,720,39,69,30
+Double-Double,In-N-Out Burger,670,37,39,41
+Chicken Avocado Burrito,El Pollo Loco,690,40,60,30
+ShackBurger,Shake Shack,530,28,37,33
+Epic Burrito,Del Taco,860,41,80,42
+Deluxe Pepperoni Pizza,Marco's Pizza,300,15,28,14
+Chicken Sandwich,Church's Chicken,690,25,68,35
+Build Your Own Pizza,Blaze Pizza,810,37,99,28
+Chicken Bowl,Flame Broiler,600,44,70,13
