@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import {
   SafeAreaView,
+  ScrollView,
   TextInput,
   Button,
   StyleSheet,
   Text,
+  Vibration,
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { IdealMenuItem } from "../Internal";
@@ -18,6 +20,8 @@ const InputScreen = () => {
   const navigation = useNavigation();
 
   const OnSubmit = () => {
+    Vibration.vibrate();
+
     const UsersIdealItem = new IdealMenuItem(
       "IdealMenuItem",
       "User",
@@ -32,36 +36,38 @@ const InputScreen = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.title}>Input Ideal Macros</Text>
-      <Text style={styles.label}>Calories:</Text>
-      <TextInput
-        style={styles.input}
-        value={calories}
-        onChangeText={setCalories}
-        keyboardType="numeric"
-      />
-      <Text style={styles.label}>Protein (g):</Text>
-      <TextInput
-        style={styles.input}
-        value={protein}
-        onChangeText={setProtein}
-        keyboardType="numeric"
-      />
-      <Text style={styles.label}>Carbs (g):</Text>
-      <TextInput
-        style={styles.input}
-        value={carbs}
-        onChangeText={setCarbs}
-        keyboardType="numeric"
-      />
-      <Text style={styles.label}>Fat (g):</Text>
-      <TextInput
-        style={styles.input}
-        value={fat}
-        onChangeText={setFat}
-        keyboardType="numeric"
-      />
-      <Button title="Submit" onPress={OnSubmit} color={styles.button.color} />
+      <ScrollView>
+        <Text style={styles.title}>Input Ideal Macros</Text>
+        <Text style={styles.label}>Calories:</Text>
+        <TextInput
+          style={styles.input}
+          value={calories}
+          onChangeText={setCalories}
+          keyboardType="numeric"
+        />
+        <Text style={styles.label}>Protein (g):</Text>
+        <TextInput
+          style={styles.input}
+          value={protein}
+          onChangeText={setProtein}
+          keyboardType="numeric"
+        />
+        <Text style={styles.label}>Carbs (g):</Text>
+        <TextInput
+          style={styles.input}
+          value={carbs}
+          onChangeText={setCarbs}
+          keyboardType="numeric"
+        />
+        <Text style={styles.label}>Fat (g):</Text>
+        <TextInput
+          style={styles.input}
+          value={fat}
+          onChangeText={setFat}
+          keyboardType="numeric"
+        />
+        <Button title="Submit" onPress={OnSubmit} color={styles.button.color} />
+      </ScrollView>
     </SafeAreaView>
   );
 };

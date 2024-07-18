@@ -1,5 +1,11 @@
 import React from "react";
-import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import {
+  SafeAreaView,
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+} from "react-native";
 import Auth0 from "react-native-auth0";
 
 const auth0 = new Auth0({
@@ -24,7 +30,7 @@ const LoginScreen = ({ navigation }) => {
   };
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Text style={styles.title}>Welcome to Macros On Demand</Text>
       <TouchableOpacity onPress={onLogin} style={styles.loginButton}>
         <Text style={styles.loginButtonText}>Login</Text>
@@ -32,7 +38,7 @@ const LoginScreen = ({ navigation }) => {
       <TouchableOpacity onPress={onContinueAsGuest} style={styles.guestButton}>
         <Text style={styles.guestButtonText}>Continue as Guest</Text>
       </TouchableOpacity>
-    </View>
+    </SafeAreaView>
   );
 };
 
@@ -47,6 +53,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     marginBottom: 20,
     color: "#1B4332",
+    textAlign: "center",
   },
   loginButton: {
     marginTop: 50,
