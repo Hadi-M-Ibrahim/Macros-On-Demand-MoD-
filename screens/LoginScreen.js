@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  SafeAreaView,
-  View,
-  Text,
-  StyleSheet,
-  TouchableOpacity,
-} from "react-native";
+import { SafeAreaView, Text, StyleSheet, TouchableOpacity } from "react-native";
 import Auth0 from "react-native-auth0";
 
 const auth0 = new Auth0({
